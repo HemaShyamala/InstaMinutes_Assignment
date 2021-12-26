@@ -1,6 +1,6 @@
 const path = require("path");
 const http = require("http");
-const express = require("express");
+//const express = require("express");
 
 const formatMessage = require("./utils/messages");
 const {
@@ -10,13 +10,13 @@ const {
   getRoomUsers,
 } = require("./utils/users");
 
-const app = express();
+//const app = express();
 //const server = http.createServer(app);
 const io = require("socket.io")(5000);
 
 //app.use(express.static(path.join(__dirname, "public")));
 
-const botName = "ChatCord Bot";
+const botName = "App Bot";
 
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
@@ -68,6 +68,6 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = "4000";
+//const PORT = "4000";
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+//app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

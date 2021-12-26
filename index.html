@@ -12,7 +12,15 @@
     />
     <link rel="stylesheet" href="./public/css/style.css" />
     <title>Universal Chat</title>
-    <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://insta-minute.vercel.app/socket.io/socket.io.js"
+    ></script>
   </head>
   <body>
     <div class="join-container">
@@ -34,12 +42,12 @@
           <div class="form-control">
             <label for="room">Room</label>
             <select name="room" id="room">
-              <option value="JavaScript">JavaScript</option>
-              <option value="Python">Python</option>
-              <option value="PHP">PHP</option>
-              <option value="C#">C#</option>
-              <option value="Ruby">Ruby</option>
-              <option value="Java">Java</option>
+              <option value="JavaScript">Tech</option>
+              <option value="Python">Business</option>
+              <option value="PHP">General</option>
+              <option value="C#">Social</option>
+              <option value="Ruby">Culture and Tradition</option>
+              <option value="Java">Skill</option>
             </select>
           </div>
           <button type="submit" class="btn">Join Chat</button>
